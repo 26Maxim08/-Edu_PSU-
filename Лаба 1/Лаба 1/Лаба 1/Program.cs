@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.InteropServices;
 using System.Text;
 
@@ -204,13 +204,13 @@ namespace Лаба_1
                     case 11:
                         {
                             // Задание 11 (3.2)
-                            Console.Write("Введите x (x < 0): ");
+                            Console.Write("Введите x (x > 0): ");
                             if (!int.TryParse(Console.ReadLine(), out x))
                             {
                                 Console.WriteLine("Некорректный ввод. Пожалуйста, введите целое число.");
                                 break;
                             }
-                            if (x >= 0)
+                            if (x < 0)
                             {
                                 Console.WriteLine("x < 0");
                             }
@@ -230,13 +230,13 @@ namespace Лаба_1
                                 Console.WriteLine("Некорректный ввод. Пожалуйста, введите целое число.");
                                 break;
                             }
-                            Console.Write("Введите y (y < 0): ");
+                            Console.Write("Введите y (y > 0): ");
                             if (!int.TryParse(Console.ReadLine(), out y))
                             {
                                 Console.WriteLine("Некорректный ввод. Пожалуйста, введите целое число.");
                                 break;
                             }
-                            if (y >= 0)
+                            if (y < 0)
                             {
                                 Console.WriteLine("y < 0");
                             }
@@ -352,10 +352,14 @@ namespace Лаба_1
                                 else
                                 {
                                     Console.WriteLine("Введите pos: ");
-                                    if (!int.TryParse(Console.ReadLine(), out z) || z<0)
+                                    if (!int.TryParse(Console.ReadLine(), out z))
                                     {
                                         Console.WriteLine("Некорректный ввод. Пожалуйста, введите целое число.");
                                         break;
+                                    }
+                                    else if (z > y|| z<0)
+                                    {
+                                        Console.WriteLine("pos не входит в размер массиваY");
                                     }
                                     else
                                     {
@@ -419,6 +423,7 @@ namespace Лаба_1
                                     Console.WriteLine("Некорректный ввод. Пожалуйста, введите целое число.");
                                     break;
                                 }
+                                else if (y < 0) Console.WriteLine("размер массива < 0");
                                 else
                                 {
                                     arr2 = pr.CreateArr(y);
