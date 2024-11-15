@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -7,10 +7,10 @@ using System.Xml.Serialization;
 public class Tasks
 {
     // Задача 1: Проверка наличия хотя бы двух одинаковых элементов в списке
-    public static bool HasDuplicates(List<int> list)
+    public static bool HasDuplicates(List<string> list)
     {
-        HashSet<int> set = new HashSet<int>();
-        foreach (int item in list)
+        HashSet<string> set = new HashSet<string>();
+        foreach (string item in list)
         {
             if (!set.Add(item))
             {
@@ -21,7 +21,7 @@ public class Tasks
     }
 
     // Задача 2: Удаление первого вхождения заданного элемента в списке
-    public static void RemoveFirstOccurrence(LinkedList<int> list, int element)
+    public static void RemoveFirstOccurrence(LinkedList<string> list, string element)
     {
         var node = list.First;
         while (node != null)
@@ -117,7 +117,6 @@ public class Tasks
         var uniqueVowels = vowelCount.Where(pair => pair.Value == 1).Select(pair => pair.Key).OrderBy(v => v);
         Console.WriteLine("уникальные гласные: " + string.Join(", ", uniqueVowels));
     }
-
 
     // Задача 5: Определение лучшего участника олимпиады
     public static void BestOlympiadParticipant(string filePath)
@@ -242,12 +241,12 @@ class Program
         if (int.TryParse(Console.ReadLine(), out int count) && count > 0)
         {
             Random random = new Random();
-            List<int> list = new List<int>();
+            List<string> list = new List<string>();
 
-            // Заполнение списка случайными числами
+            // Заполнение списка случайными строками
             for (int i = 0; i < count; i++)
             {
-                list.Add(random.Next(1, 11)); // Генерация чисел от 1 до 10
+                list.Add(random.Next(1, 11).ToString()); // Генерация строк от "1" до "10"
             }
 
             Console.WriteLine("Список: " + string.Join(", ", list));
@@ -265,26 +264,21 @@ class Program
         if (int.TryParse(Console.ReadLine(), out int c) && c > 0)
         {
             Random random = new Random();
-            LinkedList<int> linkedList = new LinkedList<int>();
+            LinkedList<string> linkedList = new LinkedList<string>();
 
-            // Заполнение списка случайными числами
+            // Заполнение списка случайными строками
             for (int i = 0; i < c; i++)
             {
-                linkedList.AddLast(random.Next(1, 11)); // Генерация чисел от 1 до 10
+                linkedList.AddLast(random.Next(1, 11).ToString()); // Генерация строк от "1" до "10"
             }
 
             Console.WriteLine("Исходный список: " + string.Join(", ", linkedList));
 
             Console.Write("Введите значение для удаления первого вхождения: ");
-            if (int.TryParse(Console.ReadLine(), out int valueToRemove))
-            {
-                Tasks.RemoveFirstOccurrence(linkedList, valueToRemove);
-                Console.WriteLine("Список после удаления: " + string.Join(", ", linkedList));
-            }
-            else
-            {
-                Console.WriteLine("Некорректный ввод значения для удаления.");
-            }
+            string valueToRemove = Console.ReadLine();
+
+            Tasks.RemoveFirstOccurrence(linkedList, valueToRemove);
+            Console.WriteLine("Список после удаления: " + string.Join(", ", linkedList));
         }
         else
         {
@@ -352,10 +346,5 @@ class Program
         Tasks.BestOlympiadParticipant(filePath);
 
         Console.ReadKey();
-    }
-
-    private static void OpenRead(string v)
-    {
-        throw new NotImplementedException();
     }
 }
