@@ -1,0 +1,7 @@
+C:\Users\Максим\Desktop\Уник 2 курс\ЯПы II C#\Лаба 4 Сухоносов\Лаба 4 Сухоносов\bin\Debug\Лаба 4 Сухоносов.exe.config
+C:\Users\Максим\Desktop\Уник 2 курс\ЯПы II C#\Лаба 4 Сухоносов\Лаба 4 Сухоносов\bin\Debug\Лаба 4 Сухоносов.exe
+C:\Users\Максим\Desktop\Уник 2 курс\ЯПы II C#\Лаба 4 Сухоносов\Лаба 4 Сухоносов\bin\Debug\Лаба 4 Сухоносов.pdb
+C:\Users\Максим\Desktop\Уник 2 курс\ЯПы II C#\Лаба 4 Сухоносов\Лаба 4 Сухоносов\obj\Debug\Лаба 4 Сухоносов.csproj.AssemblyReference.cache
+C:\Users\Максим\Desktop\Уник 2 курс\ЯПы II C#\Лаба 4 Сухоносов\Лаба 4 Сухоносов\obj\Debug\Лаба 4 Сухоносов.csproj.CoreCompileInputs.cache
+C:\Users\Максим\Desktop\Уник 2 курс\ЯПы II C#\Лаба 4 Сухоносов\Лаба 4 Сухоносов\obj\Debug\Лаба 4 Сухоносов.exe
+C:\Users\Максим\Desktop\Уник 2 курс\ЯПы II C#\Лаба 4 Сухоносов\Лаба 4 Сухоносов\obj\Debug\Лаба 4 Сухоносов.pdb

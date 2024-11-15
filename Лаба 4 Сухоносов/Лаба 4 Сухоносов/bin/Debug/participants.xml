@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfParticipant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Participant>
+    <LastName>Семенов</LastName>
+    <FirstName>Егор</FirstName>
+    <Grade>11</Grade>
+    <Score>225</Score>
+  </Participant>
+  <Participant>
+    <LastName>Иванов</LastName>
+    <FirstName>Иван</FirstName>
+    <Grade>10</Grade>
+    <Score>230</Score>
+  </Participant>
+  <Participant>
+    <LastName>Петров</LastName>
+    <FirstName>Петр</FirstName>
+    <Grade>9</Grade>
+    <Score>210</Score>
+  </Participant>
+  <Participant>
+    <LastName>Сидоров</LastName>
+    <FirstName>Сидор</FirstName>
+    <Grade>11</Grade>
+    <Score>225</Score>
+  </Participant>
+</ArrayOfParticipant>
